@@ -11,5 +11,4 @@ export const Position = {
     PD: 'Ponta direita',
     SA: 'Segundo atacante',
     ATA: 'Atacante',
-    GOL: 'Goleiro'
 }
