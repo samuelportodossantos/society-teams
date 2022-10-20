@@ -43,7 +43,7 @@ export default class Player {
             throw new Error('Wrong position type')
         }
         if (this.name == null || this.name == '') {
-            throw new Error('Inválid player name')
+            throw new Error('Invalid player name')
         }
              
     }
