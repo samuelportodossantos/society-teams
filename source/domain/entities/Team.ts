@@ -18,6 +18,14 @@ export default class Team {
         }
     }
 
+    public setScore(score: number) {
+        this.score = score
+    }
+
+    public insertPlayer(player: Player): void {
+        this.players.push(player)
+    }
+
     public getTeam() {
         return {
             name: this.name,

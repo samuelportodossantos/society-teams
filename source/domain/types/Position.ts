@@ -12,3 +12,5 @@ export const Position = {
     SA: 'Segundo atacante',
     ATA: 'Atacante',
 }
+
+//Enum

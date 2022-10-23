@@ -1,12 +1,12 @@
-import Player from "../Player"
-import Team from "../Team"
+import Player from "../entities/Player"
+import Team from "../entities/Team"
 
 export default class TeamDrawService {
 
     private playerPerTeam: number
     private amountOfPlayers: number
     private players: Array<Player>
-    private teams: Array<any>  = []
+    private teams: Array<Team>  = []
 
     constructor(players: Player[], playersPerTeam: number) {
         this.players = players
@@ -23,8 +23,8 @@ export default class TeamDrawService {
 
     private populateTeams(): void {
         let teamIndex = 0
-        this.players.map(player => {            
-            this.teams[teamIndex].players.push(player)            
+        this.players.map(player => {                        
+            this.teams[teamIndex].insertPlayer(player)            
             if ( teamIndex >= this.teams.length - 1 ) {
                 teamIndex = 0
             } else {

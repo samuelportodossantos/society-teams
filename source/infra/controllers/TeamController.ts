@@ -1,9 +1,9 @@
 import { Request, Response } from 'express'
 import { getRandomPosition, randomNumber } from '../../common/helpers'
-import Player from '../../domain/Player'
 import { Avarage } from '../../domain/types/Avarage'
 import { faker } from '@faker-js/faker'
 import TeamDrawService from '../../domain/services/TeamDrawService'
+import Player from '../../domain/entities/Player'
 
 export default class TeamController {
 

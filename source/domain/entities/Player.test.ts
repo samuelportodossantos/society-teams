@@ -1,6 +1,6 @@
 import Player from "./Player"
-import { Avarage } from "./types/Avarage"
-import { Position } from "./types/Position"
+import { Avarage } from "../types/Avarage"
+import { Position } from "../types/Position"
 
 describe('Test player behaviours', () => {
 

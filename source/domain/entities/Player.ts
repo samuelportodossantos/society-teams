@@ -1,5 +1,5 @@
-import { Avarage } from "./types/Avarage"
-import { Position } from "./types/Position"
+import { Avarage } from "../types/Avarage"
+import { Position } from "../types/Position"
 
 export default class Player {
 
